@@ -13,11 +13,14 @@
 @keyframes blink {
     0% {
         background-color: transparent;
+        box-shadow: transparent 2px 2px;
     }
     50% {
-        background-color: black;
+        background-color: antiquewhite;
+        box-shadow: black 2px 2px;
     }
     100% {
         background-color: transparent;
+        box-shadow: transparent 2px 2px;
     }
 }

@@ -15,7 +15,6 @@ const Home = () => {
 </div>`];
 
     const typeWords = () => {
-        console.log('interval')
         if(index < greeting.length){
             setWords( words => {
                 const w = words + greeting[index];

@@ -6,12 +6,21 @@ import FourOhFour from './FourOhFour';
 import Resume from './Resume';
 import Projects from './Projects';
 import Contact from './Contact';
+import bgImage from './images/background.jpg';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
     <NavBar />
-    <div className='container'>
+    <div className='container' style={
+        {backgroundImage: `url(${bgImage})`, 
+        backgroundSize: 'cover',
+        width: '100vw',
+        height: '100vh',
+        opacity: '60%'}
+        }>
+      <div className='wrapper'>
     <Switch>
       <Route exact path='/'>
         <Home />
@@ -29,6 +38,8 @@ function App() {
         <FourOhFour />
       </Route>
     </Switch>
+    <Footer/>
+    </div>
     </div>
     </>
   );

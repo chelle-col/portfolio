@@ -13,7 +13,7 @@ const Resume = () => {
             <div className='container'>
                 <SocialMediaLink name='Me on LinkedIn' link='https://www.linkedin.com/in/chelle-collins/'/>
                 <SocialMediaLink name='Me on Github' link='https://github.com/chelle-col' />
-                <h3>Download My Resume</h3>
+                <h4>Download My Resume</h4>
                 <ResumenDownload file={file} type='PDF' />
             </div>
         </>
