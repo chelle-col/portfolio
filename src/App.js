@@ -11,37 +11,32 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
-    <NavBar />
-    <div className='container' style={
-        {backgroundImage: `url(${bgImage})`, 
-        backgroundSize: 'cover',
-        width: '100vw',
-        height: '100vh',
-        opacity: '60%'}
-        }>
-      <div className='wrapper'>
-    <Switch>
-      <Route exact path='/'>
-        <Home />
-      </Route>
-      <Route exact path='/projects'>
-        <Projects/>
-      </Route>
-      <Route exact path='/resume'>
-        <Resume />
-      </Route>
-      <Route exact path='/contact'>
-        <Contact />
-      </Route>
-      <Route>
-        <FourOhFour />
-      </Route>
-    </Switch>
-    <Footer/>
+    <div className='App'>
+      <div className='Background' style={{backgroundImage: `url(${bgImage})`}}></div>
+      <NavBar />
+      <div className='container'>
+        <div className='wrapper'>
+          <Switch>
+            <Route exact path='/'>
+              <Home />
+            </Route>
+            <Route exact path='/projects'>
+              <Projects/>
+            </Route>
+            <Route exact path='/resume'>
+              <Resume />
+            </Route>
+            <Route exact path='/contact'>
+              <Contact />
+            </Route>
+            <Route>
+              <FourOhFour />
+            </Route>
+          </Switch>
+          <Footer/>
+        </div>
+      </div>
     </div>
-    </div>
-    </>
   );
 }
 

@@ -1,3 +1,4 @@
+import CardGroup from 'react-bootstrap/CardGroup';
 import ProjectDetail from './components/ProjectDetail';
 import encounterTimeImage from './images/encounterTime.png';
 import ankhImage from './images/ankh.png';
@@ -7,6 +8,7 @@ const Projects = () => {
         title: 'Encounter Time',
         image: encounterTimeImage,
         desc: `An encounter builder for Dungeons and Dragons. 
+        Makes building encounters easier. With the ablity to save and alter, you can build a new campaign.
         Built with an express/postgresql back end, and a React front end`,
         url: 'https://encounter-time.surge.sh/'
     }
@@ -20,8 +22,10 @@ const Projects = () => {
     return (
         <>
             <h1>Projects</h1>
-            <ProjectDetail project={EncounterTime} />
-            <ProjectDetail project={Ankh} />
+            <CardGroup>
+                <ProjectDetail project={EncounterTime} />
+                <ProjectDetail project={Ankh} />
+            </CardGroup>
         </>
     )
 }

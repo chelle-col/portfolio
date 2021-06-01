@@ -6,13 +6,11 @@ const Home = () => {
     const [ words, setWords ] = useState('');
     const [ index, setIndex ] = useState(0);
 
-    const greeting = [...`<div>
-        <p>
-        Hello!
-        <br>
-        Welcome to my website
-        </p>
-</div>`];
+    const tab = '\n     ';
+
+    const greeting = [...`<div>`, tab,
+        ...`<p>`, tab,...`Hello!`, tab,...`<br>`, tab, 
+        ...`Welcome to my website`, tab, ...`</p>`,'\n', ...`</div>`];
 
     const typeWords = () => {
         if(index < greeting.length){
@@ -25,7 +23,7 @@ const Home = () => {
     };
     
     useEffect( () => {
-        const intervalId = setInterval(typeWords, 500);
+        const intervalId = setInterval(typeWords, 300);
         if( index > greeting.length - 1 ){
             clearInterval(intervalId);
         }
@@ -34,7 +32,6 @@ const Home = () => {
 
     return (
         <>
-        <h1>I am Home Page</h1>
         <h2>{words}<Cursor/></h2>
         </>
     );

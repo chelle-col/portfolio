@@ -1,8 +1,24 @@
 .App {
   text-align: center;
+  background-color: black;
+  background-repeat: repeat;
+  height: 115vh;
 }
 
 .wrapper{
-  position: absolute;
+  position: relative;
   min-height: 100vh;
+  color: antiquewhite;
+  text-shadow: 0px 0px 10px black;
+}
+
+.Background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100vw;
+  height: 115vh;
+  opacity: 60%;
 }
