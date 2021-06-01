@@ -1,0 +1,23 @@
+.Cursor{
+    position: relative;
+    display: inline-block;
+}
+.Cursor-Cursor{
+    position: relative;
+    top: .7rem;
+    width: 1rem;
+    height: .5rem;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: transparent;
+    }
+}

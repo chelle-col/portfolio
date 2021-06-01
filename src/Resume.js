@@ -9,15 +9,23 @@ const Resume = () => {
             <p>Last year, I got some money. Rather than putting it into the bank and forgetting about it. I decided to take a course.</p>
             <p>I decided Springboard was a good fit for me. </p>
             <p>Now I'm looking for a job in this new field and I hope you like what you see!</p>
-            <Button>
-                <a className='text-white' href='https://www.linkedin.com/in/chelle-collins/'>Find Me on LinkedIn</a>
-            </Button>
-            <Button>
-                <a className='text-white' href='https://github.com/chelle-col'>Github</a>
-            </Button>
-            <Button>
-                <a className='text-white' href={file} download='MichelleResume'>PDF</a>
-            </Button>
+            <div className='container'>
+                <div className='m-2'>
+                    <Button>
+                        <a className='text-white' href='https://www.linkedin.com/in/chelle-collins/'>Find Me on LinkedIn</a>
+                    </Button>
+                </div>
+                <div className='m-2'>
+                    <Button>
+                        <a className='text-white' href='https://github.com/chelle-col'>Github</a>
+                    </Button>
+                </div>
+                <div className='m-2'>
+                    <Button>
+                        <a className='text-white' href={file} download='MichelleResume'>PDF</a>
+                    </Button>
+                </div>
+            </div>
         </>
     )
 }
