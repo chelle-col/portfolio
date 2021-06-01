@@ -2,8 +2,10 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home';
 import NavBar from './NavBar';
-import FourOhFour from './FourOhFour'
-import Placeholder from './Placeholder';
+import FourOhFour from './FourOhFour';
+import Resume from './Resume';
+import Projects from './Projects';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -14,13 +16,13 @@ function App() {
         <Home />
       </Route>
       <Route exact path='/projects'>
-        <Placeholder/>
+        <Projects/>
       </Route>
       <Route exact path='/resume'>
-        <Placeholder />
+        <Resume />
       </Route>
       <Route exact path='/contact'>
-        <Placeholder />
+        <Contact />
       </Route>
       <Route>
         <FourOhFour />
