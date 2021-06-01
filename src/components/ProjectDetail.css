@@ -1,0 +1,7 @@
+.ProjectDetail-Card{
+    width: 30rem;
+}
+.ProjectDetail-Image {
+    max-height: 15rem; 
+    object-fit: cover;
+}
