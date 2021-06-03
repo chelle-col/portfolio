@@ -2,7 +2,9 @@
   text-align: center;
   background-color: black;
   background-repeat: repeat;
-  height: 115vh;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .wrapper{
@@ -14,11 +16,12 @@
 
 .Background{
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 0;
   background-size: cover;
   background-repeat: repeat;
-  width: 100vw;
-  height: 115vh;
-  opacity: 60%;
+  width: 100%;
+  min-height: 102vh;
+  overflow: hidden;
+  opacity: .6;
 }
