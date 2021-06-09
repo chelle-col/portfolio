@@ -6,11 +6,16 @@ const Home = () => {
     const [ words, setWords ] = useState('');
     const [ index, setIndex ] = useState(0);
 
-    const tab = '\n     ';
+    const tab = '     ';
+    const newLine = '\n'
 
-    const greeting = [...`<div>`, tab,
-        ...`<p>`, tab,...`Hello!`, tab,...`<br>`, tab, 
-        ...`Welcome to my website`, tab, ...`</p>`,'\n', ...`</div>`];
+    const greeting = [...`<div>`, 
+        newLine + tab,...`<p>`, 
+        newLine + tab, tab, ...`Michelle Collins`, 
+        newLine + tab, tab, tab,...`<br>`, 
+        newLine + tab, tab, ...`Full Stack Software Engineer`, 
+        newLine + tab, ...`</p>`,
+        newLine, ...`</div>`];
 
     const typeWords = () => {
         if(index < greeting.length){
@@ -23,7 +28,7 @@ const Home = () => {
     };
     
     useEffect( () => {
-        const intervalId = setInterval(typeWords, 300);
+        const intervalId = setInterval(typeWords, 150);
         if( index > greeting.length - 1 ){
             clearInterval(intervalId);
         }

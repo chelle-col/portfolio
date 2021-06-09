@@ -1,27 +1,10 @@
 .ProjectDetail-Card{
-    /* width: 30rem; */
     color: black;
     text-decoration: none;
     text-shadow: none;
 }
 
 .ProjectDetail-Image {
-    max-height: 10rem; 
+    height: 8rem;
     object-fit: cover;
-}
-
-.card {
-    height: 100%;
-    display: flex;
-}
-
-.card-block {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.card.card-footer {
-    align-self: flex-end;
-    flex: 1 1 auto;
 }

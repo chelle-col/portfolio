@@ -10,9 +10,10 @@ import bgImage from './images/background.jpg';
 import Footer from './components/Footer';
 
 function App() {
+  console.log(bgImage)
   return (
-    <div className='App'>
-      <div className='Background' style={{backgroundImage: `url(${bgImage})`}}></div>
+    <div className='App' style={{backgroundImage: `url(${bgImage})`}}>
+      {/* <div className='Background' style={{backgroundImage: `url(${bgImage})`}}></div> */}
       <NavBar />
       <div className='container'>
         <div className='wrapper'>
