@@ -1,6 +1,9 @@
 import file from './docs/resume1.pdf';
 import SocialMediaLink from './components/SocialMediaLink';
 import ResumenDownload from './components/ResumeDownload';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 const Resume = () => {
     return (
@@ -12,8 +15,8 @@ const Resume = () => {
             <p> I hope you like what you see!</p>
             <div className='container'>
                 <h4>Find Me On Social Media</h4>
-                <SocialMediaLink name='Me on LinkedIn' link='https://www.linkedin.com/in/chelle-collins/'/>
-                <SocialMediaLink name='Me on Github' link='https://github.com/chelle-col' />
+                <SocialMediaLink icon={faLinkedin} link='https://www.linkedin.com/in/chelle-collins/'/>
+                <SocialMediaLink icon={faGithub} link='https://github.com/chelle-col' />
                 <h4>Download My Resume</h4>
                 <ResumenDownload file={file} type='PDF' />
             </div>
